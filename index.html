@@ -9,11 +9,11 @@
   <link rel='stylesheet'
     href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 
 <body>
-  <!-- partial:index.partial.html -->
   <div class="layout has-sidebar fixed-sidebar fixed-header">
     <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
       <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
@@ -30,79 +30,98 @@
         <div class="sidebar-content">
           <nav class="menu open-current-submenu">
             <ul>
-              <li class="menu-header"><span> GENERAL </span></li>
+              <li class="menu-header"><span>Transacciones generales</span></li>
               <li class="menu-item sub-menu">
                 <a href="#">
                   <span class="menu-icon">
-                    <i class="ri-vip-diamond-fill"></i>
+                    <i class="fas fa-globe"></i>
                   </span>
-                  <span class="menu-title">Categorías</span>
-                  <span class="menu-suffix">
-                    <span class="badge primary">ola</span>
-                  </span>
+                  <span class="menu-title">Recursos Biologicos</span>
                 </a>
                 <div class="sub-menu-list">
                   <ul>
                     <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">Fauna</span>
+                      <a href="index/registro.html" target="_self">
+                          <span class="menu-icon">
+                             <i class="fas fa-clipboard-list"></i>
+                          </span>
+                          <span class="menu-title">Registro inventario</span>
                       </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">plantas</span>
-                      </a>
-                    </li>
+                    </li>                  
                     <li class="menu-item sub-menu">
                       <a href="#">
-                        <span class="menu-title">Flora</span>
+                        <span class="menu-icon">
+                          <i class="fas fa-chart-bar"></i>
+                        </span>
+                        <span class="menu-title">Reportes y estadisticas</span>
                       </a>
+                    </li>
                       <div class="sub-menu-list">
                         <ul>
                           <li class="menu-item">
                             <a href="#">
-                              <span class="menu-title">Input</span>
+                              <span class="menu-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <span class="menu-title">Mapa de Distribución</span>
                             </a>
                           </li>
+                        </ul>
+                      </div>
+                  </ul>
+                </div>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="fas fa-paw"></i>
+                  </span>
+                  <span class="menu-title">Gestion Fauna</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="index/registro.html" target="_self">
+                          <span class="menu-icon">
+                              <i class="fas fa-user-plus"></i>
+                          </span>
+                          <span class="menu-title">Registros</span>
+                      </a>
+                    </li> 
+                                
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="fas fa-leaf"></i>
+                  </span>
+                  <span class="menu-title">Gestion Flora</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="index/registro.html" target="_self">
+                          <span class="menu-icon">
+                              <i class="fas fa-user-plus"></i>
+                          </span>
+                          <span class="menu-title">Registros</span>
+                      </a>
+                    </li>                  
+                    <li class="menu-item sub-menu">
+                      <a href="#">
+                        <span class="menu-icon">
+                          <i class="fas fa-question-circle"></i>
+                        </span>
+                        <span class="menu-title">Consultas</span>
+                      </a>
+                    </li>
+                      <div class="sub-menu-list">
+                        <ul>
                           <li class="menu-item">
                             <a href="#">
                               <span class="menu-title">Select</span>
                             </a>
-                          </li>
-                          <li class="menu-item sub-menu">
-                            <a href="#">
-                              <span class="menu-title">More</span>
-                            </a>
-                            <div class="sub-menu-list">
-                              <ul>
-                                <li class="menu-item">
-                                  <a href="#">
-                                    <span class="menu-title">CheckBox</span>
-                                  </a>
-                                </li>
-                                <li class="menu-item">
-                                  <a href="#">
-                                    <span class="menu-title">Radio</span>
-                                  </a>
-                                </li>
-                                <li class="menu-item sub-menu">
-                                  <a href="#">
-                                    <span class="menu-title">Want more ?</span>
-                                    <span class="menu-suffix">&#x1F914;</span>
-                                  </a>
-                                  <div class="sub-menu-list">
-                                    <ul>
-                                      <li class="menu-item">
-                                        <a href="#">
-                                          <span class="menu-prefix">&#127881;</span>
-                                          <span class="menu-title">You made it </span>
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </li>
-                              </ul>
-                            </div>
                           </li>
                         </ul>
                       </div>
@@ -110,130 +129,31 @@
                   </ul>
                 </div>
               </li>
-              <li class="menu-item sub-menu">
-                <a href="#">
-                  <span class="menu-icon">
-                    <i class="ri-bar-chart-2-fill"></i>
-                  </span>
-                  <span class="menu-title">Charts</span>
-                </a>
-                <div class="sub-menu-list">
-                  <ul>
-                    <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">Pie chart</span>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">Line chart</span>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">Bar chart</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="menu-item sub-menu">
-                <a href="#">
-                  <span class="menu-icon">
-                    <i class="ri-shopping-cart-fill"></i>
-                  </span>
-                  <span class="menu-title">E-commerce</span>
-                </a>
-                <div class="sub-menu-list">
-                  <ul>
-                    <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">Products</span>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">Orders</span>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">credit card</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
+            </ul>
               <li class="menu-item sub-menu">
                 <a href="#">
                   <span class="menu-icon">
                     <i class="ri-global-fill"></i>
                   </span>
-                  <span class="menu-title">Maps</span>
+                  <span class="menu-title">Monitoreo</span>
                 </a>
-                <div class="sub-menu-list">
-                  <ul>
-                    <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">Google maps</span>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">Open street map</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
               </li>
-              <li class="menu-item sub-menu">
-                <a href="#">
-                  <span class="menu-icon">
-                    <i class="ri-paint-brush-fill"></i>
-                  </span>
-                  <span class="menu-title">Theme</span>
-                </a>
-                <div class="sub-menu-list">
-                  <ul>
-                    <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">Dark</span>
-                      </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#">
-                        <span class="menu-title">Light</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="menu-header" style="padding-top: 20px"><span> EXTRA </span></li>
+
+              <li class="menu-header" style="padding-top: 20px"><span>Reportes</span></li>
               <li class="menu-item">
                 <a href="#">
                   <span class="menu-icon">
-                    <i class="ri-book-2-fill"></i>
+                    <i class="fas fa-bullhorn"></i>
                   </span>
-                  <span class="menu-title">Documentation</span>
-                  <span class="menu-suffix">
-                    <span class="badge secondary">Beta</span>
-                  </span>
+                  <span class="menu-title">Difusión de Resultados</span>
                 </a>
               </li>
               <li class="menu-item">
                 <a href="#">
                   <span class="menu-icon">
-                    <i class="ri-calendar-fill"></i>
+                    <i class="fas fa-flask"></i>
                   </span>
-                  <span class="menu-title">Calendar</span>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="#">
-                  <span class="menu-icon">
-                    <i class="ri-service-fill"></i>
-                  </span>
-                  <span class="menu-title">Examples</span>
+                  <span class="menu-title">Nuestra Labor</span>
                 </a>
               </li>
             </ul>
@@ -242,20 +162,11 @@
         <div class="sidebar-footer">
           <div class="footer-box">
             <div>
-              <img class="react-logo"
-                src="https://user-images.githubusercontent.com/25878302/213938106-ca8f0485-3f30-4861-9188-2920ed7ab284.png"
-                alt="react" />
+              <img src="img/LOG.png"  width="80px" heigth="80px"/>
             </div>
             <div style="padding: 0 10px">
-              <span style="display: block; margin-bottom: 10px">Pro sidebar is also available as a react package
-              </span>
-              <div style="margin-bottom: 15px">
-                <img alt="preview badge"
-                  src="https://img.shields.io/github/stars/azouaoui-med/react-pro-sidebar?style=social" />
-              </div>
-              <div>
-                <a href="https://github.com/azouaoui-med/react-pro-sidebar" target="_blank">Check it out!</a>
-              </div>
+              <span style="display: block; margin-bottom: 10px">Parroquia El Anegado
+               del Canton Jipijapa</span>
             </div>
           </div>
         </div>
@@ -268,47 +179,32 @@
           <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
             <i class="ri-menu-line ri-xl"></i>
           </a>
-          <h1 style="margin-bottom: 0">ANEGADO_TRAVELING</h1>
-          <span style="display: inline-block">
-            Bienvenido a la plataforma de inventario de Anegado Travel, en esta sección podrás realizar las operaciones básicas para el manejo de los productos y servicios que se ofrecen en la empresa.
-          </span>
-          <br />
-          <span>
-            <a href="https://github.com/azouaoui-med/pro-sidebar-template" target="_blank">Github</a>
-          </span>
-          <div style="margin-top: 10px">
-            <a href="https://github.com/azouaoui-med/pro-sidebar-template" target="_blank">
-              <img alt="GitHub stars"
-                src="https://img.shields.io/github/stars/azouaoui-med/pro-sidebar-template?style=social" />
-            </a>
-            <a href="https://github.com/azouaoui-med/pro-sidebar-template" target="_blank">
-              <img alt="GitHub forks"
-                src="https://img.shields.io/github/forks/azouaoui-med/pro-sidebar-template?style=social" />
-            </a>
-          </div>
+          <h1 style="margin-bottom: 0">PARROQUIA --EL ANEGADO--</h1>
+          <p>
+            Bienvenidos a la Plataforma de Gestión de Inventario de Recursos Biológicos de la Parroquia El Anegado, Manabí.
+          </p>
+          <p>
+            Nuestro objetivo es proporcionar una herramienta integral que facilite la conservación, el estudio y la valorización de la biodiversidad de esta región, promoviendo su uso sostenible y la preservación de la medicina natural y tradicional que ha sido parte fundamental de la cultura local por generaciones.
+          </p>
+          <br/>
         </div>
-        <footer class="footer">
-          <small style="margin-bottom: 20px; display: inline-block">
-            © 2024 hecho por
-            <span style="color: red; font-size: 18px">&#10084;</span> by -
-            <a target="_blank" href="https://azouaoui.netlify.com"> Grupo Anyely</a>
-          </small>
-          <br />
-          <div class="social-links">
-            <a href="" target="_blank">
-              <i class="ri-github-fill ri-xl"></i>
-            </a>
-            <a href="" target="_blank">
-              <i class="ri-twitter-fill ri-xl"></i>
-            </a>
-            <a href="" target="_blank">
-              <i class="ri-codepen-fill ri-xl"></i>
-            </a>
-            <a href="" target="_blank">
-              <i class="ri-linkedin-box-fill ri-xl"></i>
-            </a>
-          </div>
-        </footer>
+        <footer>
+          <div class="col-md-6 text-right">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a> 
+                <span class="contact-email">Elanegado564@gmail.com</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a> 
+                <span class="contact-email">-----</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a> 
+                <span class="contact-email">-----</span>
+            </div>
+        </div>
+      </footer>
+      
       </main>
       <div class="overlay"></div>
     </div>
