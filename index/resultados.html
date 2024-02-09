@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Interactivo: Conservación de la Biodiversidad</title>
+    <style>
+        /* Estilos CSS para mejorar el diseño */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .chart {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tablero Interactivo: Conservación de la Biodiversidad</h1>
+        
+        <h2>Resumen de Datos</h2>
+        <p>A continuación se muestran estadísticas y visualizaciones clave de la base de datos de nuestra investigación:</p>
+        
+        <!-- Gráfico de especies por tipo (flora/fauna) -->
+        <h3>Especies por Tipo</h3>
+        <div class="chart" id="especiesPorTipoChart"></div>
+        
+        <!-- Gráfico de distribución geográfica -->
+        <h3>Distribución Geográfica</h3>
+        <div class="chart" id="distribucionGeograficaChart"></div>
+        
+        <!-- Tabla de especies en riesgo -->
+        <h3>Especies en Riesgo</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Especie</th>
+                    <th>Estado de Conservación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Especie A</td>
+                    <td>En Peligro</td>
+                </tr>
+                <tr>
+                    <td>Especie B</td>
+                    <td>Vulnerable</td>
+                </tr>
+                <!-- Agregar más filas según los datos -->
+            </tbody>
+        </table>
+        
+        <!-- Agregar más visualizaciones y estadísticas según sea necesario -->
+        
+        <p>Para más detalles y análisis avanzado, por favor acceda a nuestra plataforma de gestión de datos.</p>
+    </div>
+    
+    <!-- Bibliotecas JavaScript para visualizaciones -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+        // Código JavaScript para crear gráficos
+        // Ejemplo: Gráfico de especies por tipo
+        var especiesPorTipoOptions = {
+            series: [30, 70], // Ejemplo de datos
+            labels: ['Flora', 'Fauna'] // Ejemplo de etiquetas
+        };
+        var especiesPorTipoChart = new ApexCharts(document.querySelector("#especiesPorTipoChart"), especiesPorTipoOptions);
+        especiesPorTipoChart.render();
+        
+        // Ejemplo: Gráfico de distribución geográfica
+        var distribucionGeograficaOptions = {
+            series: [{
+                name: 'Especies',
+                data: [10, 20, 30, 40, 50] // Ejemplo de datos
+            }],
+            xaxis: {
+                categories: ['Región 1', 'Región 2', 'Región 3', 'Región 4', 'Región 5'] // Ejemplo de categorías
+            }
+        };
+        var distribucionGeograficaChart = new ApexCharts(document.querySelector("#distribucionGeograficaChart"), distribucionGeograficaOptions);
+        distribucionGeograficaChart.render();
+    </script>
+</body>
+</html>

@@ -10,60 +10,56 @@
     <h2>Registro de Animales</h2>
     <form action="procesar_registro_animal.php" method="post">
         <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <label for="nombre_cientifico">Nombre Científico:</label><br>
-                <input type="text" id="nombre_cientifico" name="nombre_cientifico" required><br>
+            <div class="row">
+                <div class="col-3">
+                    <label for="nombre_cientifico">Nombre Científico:</label><br>
+                    <input type="text" id="nombre_cientifico" name="nombre_cientifico" required><br>
+                </div>
+                <div class="col-3">
+                    <label for="nombre_comun">Nombre Común:</label><br>
+                    <input type="text" id="nombre_comun" name="nombre_comun"><br>
+                </div>
+                <div class="col-3">
+                    <label for="familia">Familia:</label><br>
+                    <input type="text" id="familia" name="familia"><br>
+                </div>
+                <div class="col-3">
+                    <label for="descripcion">Descripción:</label><br>
+                    <textarea id="descripcion" name="descripcion" ></textarea><br>
+                </div>
             </div>
-            <div class="col-3">
-                <label for="nombre_comun">Nombre Común:</label><br>
-                <input type="text" id="nombre_comun" name="nombre_comun"><br>
+            <div class="row">
+                <div class="col-3">
+                    <label for="habitat">Hábitat:</label><br>
+                    <input type="text" id="habitat" name="habitat"><br>
+                </div>
+                <div class="col-3">
+                    <label for="distribucion">Distribución:</label><br>
+                    <input type="text" id="distribucion" name="distribucion"><br>
+                </div>
+                <div class="col-3">
+                    <label for="usos_tradicionales">Usos Tradicionales:</label><br>
+                    <textarea id="usos_tradicionales" name="usos_tradicionales"></textarea><br>
+                </div>
+                <div class="col-3">
+                    <label for="estado_conservacion">Estado de Conservación:</label><br>
+                    <input type="text" id="estado_conservacion" name="estado_conservacion"><br>
+                </div>
             </div>
-            <div class="col-3">
-                <label for="familia">Familia:</label><br>
-                <input type="text" id="familia" name="familia"><br>
+            <div class="row">
+                <div class="col-3">
+                    <label for="foto_path">Foto:</label><br>
+                    <input type="text" id="foto_path" name="foto_path"><br>
+                </div>
+                <div class="col-3">
+                    <label for="fecha_registro">Fecha de Registro:</label><br>
+                    <input type="date" id="fecha_registro" name="fecha_registro"><br>
+                </div>
+                <div class="col-3">
+                    <label for="observaciones">Observaciones:</label><br>
+                    <textarea id="observaciones" name="observaciones"></textarea><br>
+                </div>
             </div>
-            <div class="col-3">
-                <label for="descripcion">Descripción:</label><br>
-                <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br>
-            </div>
-        </div>
-        <div class="rom">
-            <div class="col-3">
-                <label for="habitat">Hábitat:</label><br>
-                <input type="text" id="habitat" name="habitat"><br>
-            </div>
-            <div class="col-3">
-                <label for="distribucion">Distribución:</label><br>
-                <input type="text" id="distribucion" name="distribucion"><br>
-            </div>
-            <div class="col-3">
-                <label for="usos_tradicionales">Usos Tradicionales:</label><br>
-                <textarea id="usos_tradicionales" name="usos_tradicionales" rows="4" cols="50"></textarea><br>
-            </div>
-            <div class="col-3">
-                <label for="estado_conservacion">Estado de Conservación:</label><br>
-                 <input type="text" id="estado_conservacion" name="estado_conservacion"><br>
-            </div>
-        </div>
-        <div class="rom">
-            <div class="col-3">
-                <label for="foto_path">Foto:</label><br>
-                <input type="text" id="foto_path" name="foto_path"><br>
-            </div>
-            <div class="col-3">
-                <label for="fecha_registro">Fecha de Registro:</label><br>
-                 <input type="date" id="fecha_registro" name="fecha_registro"><br>
-            </div>
-            <div class="col-3">
-                <label for="usos_tradicionales">Usos Tradicionales:</label><br>
-                <textarea id="usos_tradicionales" name="usos_tradicionales" rows="4" cols="50"></textarea><br>
-            </div>
-            <div class="col-3">
-                <label for="observaciones">Observaciones:</label><br>
-                <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea><br>
-            </div>
-        </div>
         <input type="submit" value="Registrar">
     </div>
     </form>
