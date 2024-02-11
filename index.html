@@ -8,7 +8,7 @@
   <link rel='stylesheet' href='https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css'>
   <link rel='stylesheet'
     href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'>
-  <link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'><link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -181,44 +181,192 @@
     </aside>
     <div id="overlay" class="overlay"></div>
     <div class="layout">
-      <main class="content">
+      
         <div>
           <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
             <i class="ri-menu-line ri-xl"></i>
           </a>
-          <h1 style="margin-bottom: 0">PARROQUIA --EL ANEGADO--</h1>
-          <p>
-            Bienvenidos a la Plataforma de Gestión de Inventario de Recursos Biológicos de la Parroquia El Anegado, Manabí.
-          </p>
-          <p>
-            Nuestro objetivo es proporcionar una herramienta integral que facilite la conservación, el estudio y la valorización de la biodiversidad de esta región, promoviendo su uso sostenible y la preservación de la medicina natural y tradicional que ha sido parte fundamental de la cultura local por generaciones.
-          </p>
-          <br/>
+            <h1 class="parroquia-title">PARROQUIA <em>"EL ANEGADO"</em></h1>
+          <section class="section slider-section">
+            <div class="container slider-column">
+              <div class="swiper swiper-slider">
+                <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="https://source.unsplash.com/1920x1280/?animal" alt="Swiper">
+                  <img class="swiper-slide" src="https://source.unsplash.com/1920x1280/?nature" alt="Swiper">
+                  <img class="swiper-slide" src="https://source.unsplash.com/1920x1280/?people" alt="Swiper">
+                  <img class="swiper-slide" src="https://source.unsplash.com/1920x1280/?flower" alt="Swiper">
+                  <img class="swiper-slide" src="https://source.unsplash.com/1920x1280/?travel" alt="Swiper">
+                  <img class="swiper-slide" src="https://source.unsplash.com/1920x1280/?fruits" alt="Swiper">
+                </div>
+                <span class="swiper-pagination"></span>
+                <span class="swiper-button-prev"></span>
+                <span class="swiper-button-next"></span>
+              </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div class="container">
+              <h2 class="section-title">Como llegar a El Anegado</h2><br>
+            </div>
+            <div class="container">
+              <div class="map-section">
+                <div class="map-wrapper">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.073394073073!2d-80.5560736857365!3d-1.153073999123073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90e6f3f3f3f3f3f3%3A0x3f3f3f3f3f3f3f3f!2sEl%20Anegado!5e0!3m2!1ses!2sec!4v1633660730733!5m2!1ses!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+          <!--Seccion de guías turísticos-->
+            <div class="guia-turistico container">
+              <h2 class="section-title">Guías Turísticos</h2><br>
+              <div class="swiper swiper-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="guia-turistico-card">
+                      <div class="guia-turistico-card-header">
+                        <img src="https://source.unsplash.com/400x400/?man" alt="Guía turístico">
+                      </div>
+                      <div class="guia-turistico-card-body">
+                        <h3>Juan Pérez</h3>
+                        <!--Descripción de Juan Pérez-->
+                        <p>Guía turístico con más de 10 años de experiencia en la parroquia El Anegado. Conocedor de la flora y fauna de la zona.</p>
+                        <!--Botón con diseño llamativo de contactar-->
+                        <button class="btn">Contactar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="guia-turistico-card">
+                      <div class="guia-turistico-card-header">
+                        <img src="https://source.unsplash.com/400x400/?woman" alt="Guía turístico">
+                      </div>
+                      <div class="guia-turistico-card-body">
+                        <h3>Fernanda Contreras</h3>
+                        <!--Descripción de Fernanda Contreras-->
+                        <p>Guía turístico con más de 5 años de experiencia en la parroquia El Anegado. Conocedora de la flora y fauna de la zona.</p>
+                        <button class="btn">Contactar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="guia-turistico-card">
+                      <div class="guia-turistico-card-header">
+                        <img src="https://source.unsplash.com/400x400/?girl" alt="Guía turístico">
+                      </div>
+                      <div class="guia-turistico-card-body">
+                        <h3>Roxely Pineda</h3>
+                        <!--Descripción de Roxely Pineda-->
+                        <p>Guía turístico con más de 8 años de experiencia en la parroquia El Anegado. Conocedora de la flora y fauna de la zona.</p>
+                        <button class="btn">Contactar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="guia-turistico-card">
+                      <div class="guia-turistico-card-header">
+                        <img src="https://source.unsplash.com/400x400/?man" alt="Guía turístico">
+                      </div>
+                      <div class="guia-turistico-card-footer">
+                        <h3>Anderson Caicedo</h3>
+                        <!--Descripción de Anderson Caicedo-->
+                        <p>Guía turístico con más de 15 años de experiencia en la parroquia El Anegado. Conocedor de la flora y fauna de la zona.</p>
+                        <button class="btn">Contactar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+            
+        </div>     
+
+        
         </div>
         <footer>
-          <div class="col-md-6 text-right">
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a> 
-                <span class="contact-email">Elanegado564@gmail.com</span>
+          <section class="social-section" id="redes">
+            <div class="social-content">
+              <br>
+              <h2 style="text-align: center;">Contáctanos</h2>
+                <div class="wrapper">
+                    <div class="button">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <div class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="https://twitter.com/" target="_blank">
+                            <div class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <div class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <div class="icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <div class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <div class="icon">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                    <!--BOTON PARA WHATSAPP-->
+                    <div class="button">
+                        <a href="https://wa.me/593980513677" target="_blank">
+                            <div class="icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <span>WhatsApp</span>
+                        </a>
+                </div>
+                
             </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-twitter"></i></a> 
-                <span class="contact-email">-----</span>
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a> 
-                <span class="contact-email">-----</span>
-            </div>
-        </div>
       </footer>
       
-      </main>
-      <div class="overlay"></div>
+
     </div>
   </div>
   <!-- partial -->
   <script src='https://unpkg.com/@popperjs/core@2'></script>
-  <script src="./script.js"></script>
+  <!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js'></script><script  src="./script.js"></script>
 
 </body>
 
