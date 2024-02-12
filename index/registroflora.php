@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h2 class="mt-5 mb-3">Registro de Flora</h2>
-        <form action="procesar_registro.php" method="post">
+        <form method="post" action="/php/registroflora.php" >
             <div class="container">
                 <div class="row">
                     <div class="col-3">
