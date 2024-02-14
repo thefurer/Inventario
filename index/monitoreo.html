@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Observaciones de Campo</title>
+    <link rel="stylesheet" href="../css/monitoreo.css">  
+</head>
+<body class="container">
+    
+        <h2 class="mt-5 mb-3">Observaciones de Campo</h2>
+   
+        <form class="content" action="../php_monitoreo/insert.php" method="post">
+            <div class="form-group">
+                <label for="especie">Especie:</label>
+                <input type="text" class="form-control" id="especie" name="especie" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo (Flora/Fauna):</label>
+                <select class="form-control" id="tipo" name="tipo" required>
+                    <option value="">Seleccione...</option>
+                    <option value="flora">Flora</option>
+                    <option value="fauna">Fauna</option>
+                </select>
+            </div>
+            <div class="form-group campos-flora">
+                <label for="condiciones_climaticas">Condiciones Climáticas:</label>
+                <input type="text" class="form-control" id="condiciones_climaticas" name="condiciones_climaticas">
+            </div>
+            <div class="form-group campos-flora">
+                <label for="notas_adicionales_flora">Notas Adicionales:</label>
+                <textarea class="form-control" id="notas_adicionales" name="notas_adicionales" rows="3"></textarea>
+            </div>
+        
+            <div class="form-group campos-fauna">
+                <label for="comportamiento">Comportamiento:</label>
+                <textarea class="form-control" id="comportamiento" name="comportamiento" rows="3"></textarea>
+            </div>
+            <div class="form-group campos-fauna">
+                <label for="estado_conservacion">Estado de Conservación:</label>
+                <input type="text" class="form-control" id="estado" name="estado">
+            </div>
+            <div class="form-group">
+                <label for="observacion">Observación:</label>
+                <textarea class="form-control" id="observacion" name="observacion" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha de la Observación:</label>
+                <input type="date" class="form-control" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="ubicacion">Ubicación de la Observación:</label>
+                <input type="text" class="form-control" id="ubicacion" name="ubicacion" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+     
+
+</body>
+</html>

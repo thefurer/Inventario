@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: aliceblue;
+    min-height: 100vh;
+    font-family: cursive;
+   
+}
+/*{
+    
+}*/
+h2 {
+    background-color: skyblue;
+    padding: 2rem;
+    text-align: center;
+}
+
+.content {
+    width: 85%;
+    margin: 0 auto;
+    background-color: powderblue;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    padding: 1.4rem;
+    margin-bottom: 2rem;
+    
+}
+label {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    opacity: 90%;
+}
+input, select, textarea {
+    min-width: 100%;
+    min-height: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 1ch;
+    border: none;
+   
+}
+input:focus, select:focus, textarea:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+textarea {
+    padding-top: 0.2rem;
+ /*    resize: none; */
+}
+
+input, select, textarea, button {
+    font: inherit;  
+    height: 3.5rem;
+    padding-right: 0.6rem;
+    border-radius: 0.5rem;
+}
+button {
+    transition: all ease 0.3s;
+    display: block;
+    background-color: hsl(197, 71%, 73%);
+    padding-block: 0.7rem;
+    width: 25%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    border: 0;
+    border-radius: 0.5rem;
+    margin-top: 0.2rem;
+    font-weight: 500;
+} 
+
+button:hover{
+    background-color: hsl(197, 71%, 63%);
+    cursor: pointer;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 0.18rem;
+}
+.content > div {
+    display: grid;
+    grid-row: span 10;
+    grid-template-rows: subgrid;
+
+}
+button {
+    grid-column: 1/-1;
+}
+@media screen and (max-width: 1024px) {
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+    button {
+        grid-column: 1/-1;
+        min-width: 200px;
+    }
+}
+@media screen and (max-width: 669px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+    button {
+        grid-column: 1/-1;
+    }
+
+    input, select, textarea, button {
+        grid-template-columns: minmax(min(100%, 50px), 1fr);
+    }
+    button {
+        min-width: 150px;
+    }
+}
