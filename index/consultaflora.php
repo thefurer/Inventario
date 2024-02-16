@@ -1,12 +1,23 @@
+<?php
+$servidor = "localhost";
+$base_de_datos = "anegado";
+$usuario = "root";
+$clave = "";
+$conn = new mysqli($servidor, $usuario, $clave, $base_de_datos);
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php  
-    include ("php/config.php");
-    ?>
 </head>
 <body>
     <div class="container">
