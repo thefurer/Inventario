@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Flora</title>
+    <!-- Incluye los estilos necesarios -->
+    <link rel="stylesheet" type="text/css" href="/css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Flora</h1>
+        <div class="table-container"> <!-- Contenedor para centrar la tabla -->
+            <table id="datos_flora" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <td>Nombre Científico</td>
+                        <td>Nombre Común</td>
+                        <td>Familia</td>
+                        <td>Descripción</td>
+                        <td>Hábitat</td>
+                        <td>Distribución</td>
+                        <td>Usos Tradicionales</td>
+                        <td>Estado de Conservación</td>
+                        <td>Fecha de Registro</td>
+                        <td>Ubicación de Registro</td>
+                        <td>Observaciones</td>
+                        <td>Editar</td>
+                        <td>Eliminar</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Incluye jQuery y DataTables -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Realiza la llamada AJAX para obtener los datos de la flora
+            $.ajax({
+                url: 'consultaflora.php',
+                method: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    // Llena la tabla con los datos obtenidos
+                    response.forEach(function(item) {
+                        var row = '<tr>';
+                        row += '<td>' + item.nombrecientifico + '</td>';
+                        row += '<td>' + item.nombrecomun + '</td>';
+                        row += '<td>' + item.familia + '</td>';
+                        row += '<td>' + item.descripcion + '</td>';
+                        row += '<td>' + item.habitat + '</td>';
+                        row += '<td>' + item.distribucion + '</td>';
+                        row += '<td>' + item.usostradicionales + '</td>';
+                        row += '<td>' + item.estadodeconservacion + '</td>';
+                        row += '<td>' + item.fecharegistro + '</td>';
+                        row += '<td>' + item.ubicacionregistro + '</td>';
+                        row += '<td>' + item.observaciones + '</td>';
+                        row += '<td><a href="editarflora.php?id=' + item.id + '">Editar</a></td>';
+                        row += '<td><a href="eliminarflora.php?id=' + item.id + '">Eliminar</a></td>';
+                        row += '</tr>';
+                        $('#datos_flora tbody').append(row);
+                    });
+                    // Inicializa DataTables en la tabla
+                    $('#datos_flora').DataTable();
+                },
+                error: function(xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
