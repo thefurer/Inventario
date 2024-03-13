@@ -42,13 +42,11 @@
 
     <script>
         $(document).ready(function() {
-            // Realiza la llamada AJAX para obtener los datos de la flora
             $.ajax({
                 url: 'consultaflora.php',
                 method: 'GET',
                 dataType: 'json',
                 success: function(response) {
-                    // Llena la tabla con los datos obtenidos
                     response.forEach(function(item) {
                         var row = '<tr>';
                         row += '<td>' + item.nombrecientifico + '</td>';
@@ -67,7 +65,6 @@
                         row += '</tr>';
                         $('#datos_flora tbody').append(row);
                     });
-                    // Inicializa DataTables en la tabla
                     $('#datos_flora').DataTable();
                 },
                 error: function(xhr, status, error) {

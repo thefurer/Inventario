@@ -5,11 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Flora</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   
+    <style>
+        body {
+            background-color: #1b1b1b;
+            padding: 20px;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiado a un tipo de letra profesional */
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .btn-primary {
+            background: #171717; /* Fondo de color degradado */
+            background: linear-gradient(to right, #171717 0%, #333333 100%); /* Degradado */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, opacity 0.3s; /* Transición suave */
+        }
+        .btn-primary:hover {
+            background: #171717; /* Fondo de color degradado */
+            background: linear-gradient(to right, #171717 0%, #333333 100%); /* Degradado */
+            opacity: 0.8; /* Cambia la opacidad al pasar el mouse */
+        }
+        .icono-registro {
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h2 class="mt-5 mb-3">Registro de Flora</h2>
-        <form method="post" action="../php/registroflo.php" >
+        <h2 class="mt-5 mb-3 title-with-icon">
+            <i class="fas fa-seedling title-icon"></i> Registro de Flora
+        </h2>
+        <form method="post" action="../php/registroflo.php">
             <div class="container">
                 <div class="row">
                     <div class="col-3">
@@ -66,8 +124,9 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-leaf icono-registro"></i>Enviar</button>
         </form>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso sistema</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link rel="stylesheet" href="./style1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+ <div class="login-form">
+  <div class="text">
+    INGRESO
+  </div>
+  
+  <form id="registerForm" action="register.php" method="post">
+    <div class="field">
+      <input type="text" name="nombre" placeholder="Ingrese Nombre">
+    </div>
+    <div class="field">
+      <input type="text" name="apellido" placeholder="Ingrese Apellido">
+    </div>
+    <div class="field">
+      <input type="text" name="edad" placeholder="Ingrese Edad">
+    </div>
+    <div class="field">
+      <div class="fas fa-envelope"></div>
+      <input type="text" name="email" placeholder="Ingrese Correo">
+    </div>
+    <div class="field">
+      <div class="fas fa-lock"></div>
+      <input type="password" name="contraseña" placeholder="Contraseña">
+    </div>
+      <button id="submitButton" type="button">Ingreso</button>
+  </form>
+  <div id="alertMessage"></div>
+  <script>
+    $(document).ready(function(){
+      $('#submitButton').on('click', function(e){
+          e.preventDefault();
+          $.ajax({
+              url: 'register.php',
+              method: 'POST',
+              data: $('#registerForm').serialize(),
+              success: function(response){
+                  $('#alertMessage').html(response); // Inserta el mensaje en el div #alertMessage
+              }
+          });
+      });
+  });
+  </script>
+</div>  
+</body>
+</html>
